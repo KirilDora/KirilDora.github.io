@@ -22,6 +22,7 @@ class App extends React.Component {
         console.log(error);
     });
   }
+  
 
   render () {
     const { advice } = this.state;
