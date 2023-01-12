@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/KirilDora.github.io/static/css/main.1b72c3c8.css",
+    "main.js": "/KirilDora.github.io/static/js/main.2c8d2918.js",
+    "index.html": "/KirilDora.github.io/index.html",
+    "main.1b72c3c8.css.map": "/KirilDora.github.io/static/css/main.1b72c3c8.css.map",
+    "main.2c8d2918.js.map": "/KirilDora.github.io/static/js/main.2c8d2918.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b72c3c8.css",
+    "static/js/main.2c8d2918.js"
+  ]
+}
