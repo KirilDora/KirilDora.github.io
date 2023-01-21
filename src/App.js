@@ -4,22 +4,24 @@ import axios from 'axios';//to use GET request from API
 import './App.css'
 
 const App = () => {
-  const [state, setState] = useState('');
-  const { advice } = state;
+
+  const [advice, setAdvice] = useState('');
+
+  useEffect(()=>{
+    fetchAdvice();
+  }, []);
+
   const fetchAdvice = () => {
     axios.get('https://api.adviceslip.com/advice')
     .then((response)=>{
-        const { advice } = response.data.slip;
-        setState({advice});
-        //state = { advice };
-        //or we can use { advice } instead { advice: advice }
-        //cause of the rule if property and value has the same name
+        setAdvice(response.data.slip.advice);
+        console.log(response.data.slip.advice);
     })
     .catch((error)=>{
         console.log(error);
     });
   }
-  useEffect(()=>{}, [state]);
+
   return (
     <div className="app">
       <div className="card">
